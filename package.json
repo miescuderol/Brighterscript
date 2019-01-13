@@ -1,0 +1,25 @@
+{
+    "name": "brighterscript",
+    "displayName": "Brighterscript",
+    "description": "Better Brightscript support for VisualStudio Code",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.30.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "brightscript",
+            "aliases": ["Brightscript", "brightscript"],
+            "extensions": [".brs"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "brightscript",
+            "scopeName": "source.brightscript",
+            "path": "./syntaxes/brightscript.tmLanguage.json"
+        }]
+    }
+}
